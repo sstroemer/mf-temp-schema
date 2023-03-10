@@ -52,11 +52,11 @@
             "description": "todo: to be added"
         },
         "state_initial": {
-            "type": "Scalar",
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Scalar",
             "description": "todo: to be added"
         },
         "state_percentage_loss": {
-            "type": "Scalar",
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Scalar",
             "description": "todo: to be added"
         },
         "nodal_balance": {
