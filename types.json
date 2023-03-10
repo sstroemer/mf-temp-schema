@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+
+    "title": "Type definitions",
+    "description": "This just defines all types that are used elsewhere. The `CoreComponent` type can not be defined here, to prevent a self recursion.",
+
+    "$defs": {
+        "Bound": {
+            "anyOf": [
+                {"type": "string"},
+                {"type": "number"}
+            ]
+        },
+        "Scalar": {
+            "type": "number"
+        },
+        "Numerical": {
+            "anyOf": [
+                {"type": "number"},
+                {"type": "array", "items": "number"},
+                {"type": "string"}
+            ]
+        }
+    }
+}
