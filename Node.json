@@ -1,0 +1,73 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+
+    "title": "Node",
+    "description": "The schema validating a MarketFlow.jl Node",
+    "type": "object",
+
+    "properties": {
+        "carrier": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "config": {
+            "type": "object",
+            "description": "todo: to be added"
+        },
+        "ext": {
+            "type": "object",
+            "description": "todo: to be added"
+        },
+        "addon": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "results": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "todo: to be added"
+        },
+        "conditional": {
+            "type": "boolean",
+            "description": "todo: to be added"
+        },
+        "has_state": {
+            "type": "boolean",
+            "description": "todo: to be added"
+        },
+        "state_lb": {
+            "$ref": "./types.json#$defs/Bound",
+            "description": "todo: to be added"
+        },
+        "state_ub": {
+            "$ref": "./types.json#$defs/Bound",
+            "description": "todo: to be added"
+        },
+        "state_cyclic": {
+            "type": {"enum": ["eq", "geq"]},
+            "description": "todo: to be added"
+        },
+        "state_initial": {
+            "type": "Scalar",
+            "description": "todo: to be added"
+        },
+        "state_percentage_loss": {
+            "type": "Scalar",
+            "description": "todo: to be added"
+        },
+        "nodal_balance": {
+            "type": {"enum": ["enforce", "create", "destroy"]},
+            "description": "todo: to be added"
+        },
+        "etdf_group": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "pf_slack": {
+            "type": "boolean",
+            "description": "todo: to be added"
+        }
+    },
+    "required": ["carrier"],
+    "additionalProperties": false
+}
