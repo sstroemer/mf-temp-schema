@@ -35,6 +35,10 @@
             "type": "boolean",
             "description": "todo: to be added"
         },
+        "value": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Numerical",
+            "description": "todo: to be added"
+        },
         "node_from": {
             "type": "string",
             "description": "todo: to be added"
@@ -61,5 +65,5 @@
         }
     },
     "required": ["type", "carrier"],
-    "additionalProperties": true
+    "additionalProperties": false
 }
