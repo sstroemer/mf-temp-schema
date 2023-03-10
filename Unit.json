@@ -59,6 +59,13 @@
             "type": "boolean",
             "description": "todo: to be added"
         },
+        "marginal_cost": {
+            "anyOf": [
+                {"type": "string"},
+                {"$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Numerical"}
+            ],
+            "description": "todo: to be added"
+        }
         "enable_ramp_up": {
             "type": "boolean",
             "description": "todo: to be added"
