@@ -15,11 +15,8 @@
             "type": "number"
         },
         "Numerical": {
-            "oneOf": [
-                {"type": "number"},
-                {"type": "array", "items": "number"},
-                {"type": "string"}
-            ]
+            "type": "number"
+
         }
     }
 }
