@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+
+    "title": "Unit",
+    "description": "The schema validating a MarketFlow.jl NoUnitde",
+    "type": "object",
+
+    "properties": {
+        "type": {
+            "type": "string",
+            "const": "Unit"
+        }
+    },
+    "required": ["type"]
+}
