@@ -17,22 +17,22 @@
             "required": ["type"],
 
             "if": {"properties": {"type": {"const": "Connection"}}},
-            "then": {"$ref": "file://./schema/Connection.json"},
+            "then": {"$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/Connection.json"},
             "else": {
                 "if": {"properties": {"type": {"const": "Decision"}}},
-                "then": {"$ref": "file://./schema/Decision.json"},
+                "then": {"$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/Decision.json"},
                 "else": {
                     "if": {"properties": {"type": {"const": "Expression"}}},
-                    "then": {"$ref": "file://./schema/Expression.json"},
+                    "then": {"$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/Expression.json"},
                     "else": {
                         "if": {"properties": {"type": {"const": "Node"}}},
-                        "then": {"$ref": "file://./schema/Node.json"},
+                        "then": {"$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/Node.json"},
                         "else": {
                             "if": {"properties": {"type": {"const": "Profile"}}},
                             "then": {"$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/Profile.json"},
                             "else": {
                                 "if": {"properties": {"type": {"const": "Unit"}}},
-                                "then": {"$ref": "file://./schema/Unit.json"}
+                                "then": {"$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/Unit.json"}
                             }
                         }
                     }
