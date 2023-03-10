@@ -65,5 +65,5 @@
         }
     },
     "required": ["type", "carrier"],
-    "additionalProperties": true
+    "additionalProperties": false
 }
