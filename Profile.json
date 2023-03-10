@@ -6,6 +6,10 @@
     "type": "object",
 
     "properties": {
+        "type": {
+            "type": "string",
+            "const": "Expression"
+        },
         "carrier": {
             "type": "number",
             "description": "todo: to be added"
@@ -30,8 +34,36 @@
         "conditional": {
             "type": "boolean",
             "description": "todo: to be added"
+        },
+        "value": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Numerical",
+            "description": "todo: to be added"
+        },
+        "node_from": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "node_to": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "mode": {
+            "type": "string",
+            "enum": ["fixed", "create", "destroy", "ranged"]
+        },
+        "lb": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Numerical",
+            "description": "todo: to be added"
+        },
+        "ub": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Numerical",
+            "description": "todo: to be added"
+        },
+        "cost": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Numerical",
+            "description": "todo: to be added"
         }
     },
-    "required": ["carrier"],
+    "required": ["type", "carrier"],
     "additionalProperties": false
 }

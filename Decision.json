@@ -6,6 +6,10 @@
     "type": "object",
 
     "properties": {
+        "type": {
+            "type": "string",
+            "const": "Expression"
+        }
     },
-    "required": []
+    "required": ["type"]
 }

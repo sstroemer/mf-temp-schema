@@ -6,6 +6,10 @@
     "type": "object",
 
     "properties": {
+        "type": {
+            "type": "string",
+            "const": "Expression"
+        },
         "carrier": {
             "type": "string",
             "description": "todo: to be added"
@@ -68,6 +72,6 @@
             "description": "todo: to be added"
         }
     },
-    "required": ["carrier"],
+    "required": ["type", "carrier"],
     "additionalProperties": false
 }
