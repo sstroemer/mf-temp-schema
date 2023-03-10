@@ -17,7 +17,7 @@
         "Numerical": {
             "oneOf": [
                 {"type": "number"},
-                {"type": "array"},
+                {"type": "array", "items": "number"},
                 {"type": "string"}
             ]
         }
