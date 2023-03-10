@@ -36,11 +36,11 @@
             "description": "todo: to be added"
         },
         "state_lb": {
-            "$ref": "./types.json#$defs/Bound",
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Bound",
             "description": "todo: to be added"
         },
         "state_ub": {
-            "$ref": "./types.json#$defs/Bound",
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Bound",
             "description": "todo: to be added"
         },
         "state_cyclic": {
