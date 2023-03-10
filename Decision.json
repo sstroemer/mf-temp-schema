@@ -56,7 +56,6 @@
             "description": "todo: to be added"
         },
         "mode": {
-            "type": "string",
             "enum": ["linear", "binary", "integer"],
             "description": "todo: to be added"
         }

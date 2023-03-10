@@ -48,7 +48,6 @@
             "description": "todo: to be added"
         },
         "mode": {
-            "type": "string",
             "enum": ["fixed", "create", "destroy", "ranged"]
         },
         "lb": {

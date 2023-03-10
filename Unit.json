@@ -84,7 +84,6 @@
             "description": "todo: to be added"
         },
         "unit_commitment": {
-            "type": "string",
             "enum": ["off", "linear", "binary", "integer"],
             "description": "todo: to be added"
         },
