@@ -6,7 +6,7 @@
 
     "$defs": {
         "Bound": {
-            "oneOf": [
+            "anyOf": [
                 {"type": "string"},
                 {"type": "number"}
             ]
@@ -15,7 +15,7 @@
             "type": "number"
         },
         "Numerical": {
-            "oneOf": [
+            "anyOf": [
                 {"type": "number"},
                 {"type": "array"},
                 {"type": "string"}
