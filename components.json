@@ -1,0 +1,43 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+
+    "title": "Model components",
+    "description": "The `components` part of a MarketFlow.jl model containing only core components",
+    "type": "object",
+
+    "patternProperties": {
+        "^.+$": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": ["Connection", "Decision", "Expression", "Node", "Profile", "Unit"]
+                }
+            },
+            "required": ["type"],
+
+            "if": {"properties": {"type": {"const": "Connection"}}},
+            "then": {"$ref": "file://./schema/Connection.json"},
+            "else": {
+                "if": {"properties": {"type": {"const": "Decision"}}},
+                "then": {"$ref": "file://./schema/Decision.json"},
+                "else": {
+                    "if": {"properties": {"type": {"const": "Expression"}}},
+                    "then": {"$ref": "file://./schema/Expression.json"},
+                    "else": {
+                        "if": {"properties": {"type": {"const": "Node"}}},
+                        "then": {"$ref": "file://./schema/Node.json"},
+                        "else": {
+                            "if": {"properties": {"type": {"const": "Profile"}}},
+                            "then": {"$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/Profile.json"},
+                            "else": {
+                                "if": {"properties": {"type": {"const": "Unit"}}},
+                                "then": {"$ref": "file://./schema/Unit.json"}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
