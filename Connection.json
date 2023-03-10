@@ -9,7 +9,81 @@
         "type": {
             "type": "string",
             "const": "Connection"
+        },
+        "node_from": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "node_to": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "config": {
+            "type": "object",
+            "description": "todo: to be added"
+        },
+        "ext": {
+            "type": "object",
+            "description": "todo: to be added"
+        },
+        "addon": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "results": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "todo: to be added"
+        },
+        "conditional": {
+            "type": "boolean",
+            "description": "todo: to be added"
+        },
+        "capacity": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Bound",
+            "description": "todo: to be added"
+        },
+        "lb": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Bound",
+            "description": "todo: to be added"
+        },
+        "ub": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Bound",
+            "description": "todo: to be added"
+        },
+        "cost": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Numerical",
+            "description": "todo: to be added"
+        },
+        "etdf": {
+            "type": "String",
+            "description": "todo: to be added"
+        },
+        "is_pf_controlled": {
+            "type": "boolean",
+            "description": "todo: to be added"
+        },
+        "pf_I": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Scalar",
+            "description": "todo: to be added"
+        },
+        "pf_V": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Scalar",
+            "description": "todo: to be added"
+        },
+        "pf_X": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Scalar",
+            "description": "todo: to be added"
+        },
+        "pf_R": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Scalar",
+            "description": "todo: to be added"
+        },
+        "pf_B": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Scalar",
+            "description": "todo: to be added"
         }
     },
-    "required": ["type"]
+    "required": ["type", "node_from", "node_to"],
+    "additionalProperties": false
 }

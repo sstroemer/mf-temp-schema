@@ -9,7 +9,37 @@
         "type": {
             "type": "string",
             "const": "Expression"
+        },
+        "value": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "config": {
+            "type": "object",
+            "description": "todo: to be added"
+        },
+        "ext": {
+            "type": "object",
+            "description": "todo: to be added"
+        },
+        "addon": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "results": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "todo: to be added"
+        },
+        "conditional": {
+            "type": "boolean",
+            "description": "todo: to be added"
+        },
+        "parametric": {
+            "type": "boolean",
+            "description": "todo: to be added"
         }
     },
-    "required": ["type"]
+    "required": ["type", "value"],
+    "additionalProperties": false
 }

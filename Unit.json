@@ -9,7 +9,102 @@
         "type": {
             "type": "string",
             "const": "Unit"
+        },
+        "conversion": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "capacity": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "config": {
+            "type": "object",
+            "description": "todo: to be added"
+        },
+        "ext": {
+            "type": "object",
+            "description": "todo: to be added"
+        },
+        "addon": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "results": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "todo: to be added"
+        },
+        "conditional": {
+            "type": "boolean",
+            "description": "todo: to be added"
+        },
+        "inputs": {
+            "type": "object",
+            "description": "todo: to be added"
+        },
+        "outputs": {
+            "type": "object",
+            "description": "todo: to be added"
+        },
+        "availability": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Numerical",
+            "description": "todo: to be added"
+        },
+        "availability_factor": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Numerical",
+            "description": "todo: to be added"
+        },
+        "adapt_min_to_availability": {
+            "type": "boolean",
+            "description": "todo: to be added"
+        },
+        "enable_ramp_up": {
+            "type": "boolean",
+            "description": "todo: to be added"
+        },
+        "enable_ramp_down": {
+            "type": "boolean",
+            "description": "todo: to be added"
+        },
+        "ramp_up_cost": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Scalar",
+            "description": "todo: to be added"
+        },
+        "ramp_down_cost": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Scalar",
+            "description": "todo: to be added"
+        },
+        "ramp_up_limit": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Scalar",
+            "description": "todo: to be added"
+        },
+        "ramp_down_limit": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Scalar",
+            "description": "todo: to be added"
+        },
+        "unit_commitment": {
+            "type": "string",
+            "enum": ["off", "linear", "binary", "integer"],
+            "description": "todo: to be added"
+        },
+        "unit_count": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Bound",
+            "description": "todo: to be added"
+        },
+        "min_conversion": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Scalar",
+            "description": "todo: to be added"
+        },
+        "conversion_at_min": {
+            "type": "string",
+            "description": "todo: to be added"
+        },
+        "startup_cost": {
+            "$ref": "https://raw.githubusercontent.com/sstroemer/mf-temp-schema/main/types.json#$defs/Scalar",
+            "description": "todo: to be added"
         }
     },
-    "required": ["type"]
+    "required": ["type", "conversion", "capacity"],
+    "additionalProperties": false
 }
