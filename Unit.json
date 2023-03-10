@@ -8,7 +8,7 @@
     "properties": {
         "type": {
             "type": "string",
-            "const": "Expression"
+            "const": "Unit"
         }
     },
     "required": ["type"]

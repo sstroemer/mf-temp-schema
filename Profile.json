@@ -8,7 +8,7 @@
     "properties": {
         "type": {
             "type": "string",
-            "const": "Expression"
+            "const": "Profile"
         },
         "carrier": {
             "type": "number",
