@@ -48,7 +48,7 @@
             "description": "todo: to be added"
         },
         "state_cyclic": {
-            "enum": ["eq", "geq"],
+            "enum": ["eq", "geq", "disabled"],
             "description": "todo: to be added"
         },
         "state_initial": {
