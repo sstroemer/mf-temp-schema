@@ -56,7 +56,7 @@
             "description": "todo: to be added"
         },
         "etdf": {
-            "type": "string",
+            "type": ["string", "object"],
             "description": "todo: to be added"
         },
         "is_pf_controlled": {
