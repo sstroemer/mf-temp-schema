@@ -6,13 +6,13 @@
 
     "$defs": {
         "Bound": {
-            "type": ["string", "number", null]
+            "type": ["string", "number", "null"]
         },
         "Scalar": {
-            "type": ["number", null]
+            "type": ["number", "null"]
         },
         "Numerical": {
-            "type": ["string", "number", "array", null]
+            "type": ["string", "number", "array", "null"]
 
         }
     }
