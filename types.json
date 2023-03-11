@@ -13,7 +13,6 @@
         },
         "Numerical": {
             "type": ["string", "number", "array", "null"]
-
         }
     }
 }
