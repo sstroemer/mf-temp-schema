@@ -6,25 +6,14 @@
 
     "$defs": {
         "Bound": {
-            "anyOf": [
-                {"type": "string"},
-                {"type": "number"},
-                {"type": null}
-            ]
+            "type": ["string", "number", null]
         },
         "Scalar": {
-            "anyOf": [
-                {"type": "number"},
-                {"type": null}
-            ]
+            "type": ["number", null]
         },
         "Numerical": {
-            "anyOf": [
-                {"type": "number"},
-                {"type": "array"},
-                {"type": "string"},
-                {"type": null}
-            ]
+            "type": ["string", "number", "array", null]
+
         }
     }
 }
