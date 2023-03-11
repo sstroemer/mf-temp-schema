@@ -8,17 +8,22 @@
         "Bound": {
             "anyOf": [
                 {"type": "string"},
-                {"type": "number"}
+                {"type": "number"},
+                {"type": null}
             ]
         },
         "Scalar": {
-            "type": "number"
+            "anyOf": [
+                {"type": "number"},
+                {"type": null}
+            ]
         },
         "Numerical": {
             "anyOf": [
                 {"type": "number"},
                 {"type": "array"},
-                {"type": "string"}
+                {"type": "string"},
+                {"type": null}
             ]
         }
     }
