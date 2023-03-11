@@ -12,7 +12,7 @@
             "type": ["number", "null"]
         },
         "Numerical": {
-            "type": ["string", "number", "array", "null"]
+            "type": ["string", "number", "array", "integer"]
         }
     }
 }
