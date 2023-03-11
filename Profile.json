@@ -10,6 +10,10 @@
             "type": "string",
             "const": "Profile"
         },
+        "disabled": {
+            "type": ["boolean", "string"],
+            "description": "todo: to be added"
+        },
         "carrier": {
             "type": "string",
             "description": "todo: to be added"

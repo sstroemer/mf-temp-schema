@@ -10,6 +10,10 @@
             "type": "string",
             "const": "Connection"
         },
+        "disabled": {
+            "type": ["boolean", "string"],
+            "description": "todo: to be added"
+        },
         "node_from": {
             "type": "string",
             "description": "todo: to be added"

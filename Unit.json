@@ -10,6 +10,10 @@
             "type": "string",
             "const": "Unit"
         },
+        "disabled": {
+            "type": ["boolean", "string"],
+            "description": "todo: to be added"
+        },
         "conversion": {
             "type": "string",
             "description": "todo: to be added"

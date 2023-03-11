@@ -10,6 +10,10 @@
             "type": "string",
             "const": "Decision"
         },
+        "disabled": {
+            "type": ["boolean", "string"],
+            "description": "todo: to be added"
+        },
         "config": {
             "type": "object",
             "description": "todo: to be added"
